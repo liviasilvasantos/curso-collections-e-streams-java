@@ -3,6 +3,7 @@
  */
 package one.digitalinnovation.map;
 
+import java.util.Iterator;
 import java.util.Map.Entry;
 import java.util.TreeMap;
 
@@ -62,6 +63,21 @@ public class ExemploTreeMap {
 		System.out.println(lastEntry.getKey() + " - " + lastEntry.getValue());
 
 		System.out.println(capitais);
+
+		// navega em todas as chaves do iterator
+		Iterator<String> it = capitais.keySet().iterator();
+		while (it.hasNext()) {
+			String key = it.next();
+			System.out.println(key + " - " + capitais.get(key));
+		}
+
+		for (String capital : capitais.keySet()) {
+			System.out.println(capital + " -- " + capitais.get(capital));
+		}
+
+		for (Entry<String, String> entry : capitais.entrySet()) {
+			System.out.println(entry.getKey() + " --- " + entry.getValue());
+		}
 	}
 
 }
