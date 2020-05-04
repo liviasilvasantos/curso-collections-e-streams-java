@@ -60,6 +60,7 @@ public class ExemploTreeSet {
 		for (String capital : capitais) {
 			System.out.println("===>" + capital);
 		}
+
 	}
 
 }

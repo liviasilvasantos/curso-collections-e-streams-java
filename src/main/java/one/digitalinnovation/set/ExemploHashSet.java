@@ -3,6 +3,7 @@
  */
 package one.digitalinnovation.set;
 
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
@@ -53,6 +54,8 @@ public class ExemploHashSet {
 		System.out.println(notasAlunos.isEmpty());
 		notasAlunos.clear();
 		System.out.println(notasAlunos.isEmpty());
+
+		// Collections.sort(notasAlunos);
 	}
 
 }
